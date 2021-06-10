@@ -4,4 +4,4 @@ services:
   sysfoo:
     image: cmchase/sysfoo:latest
     ports:
-      - 9999:8080
+      - 8888:8080
