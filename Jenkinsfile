@@ -54,7 +54,17 @@ pipeline {
             dockerImage.push("latest")
           }
         }
+      }
+    }
 
+    stage('Deploy to Dev') {
+      when {
+        branch 'master'
+      }
+      agent any
+      steps {
+        echo 'Deploying to Dev Env'
+        sh 'docker-compose up -d'
       }
     }
 
