@@ -1,0 +1,6 @@
+version: "3.8"
+
+services: :
+    sysfoo:
+        image: cmchase/sysfoo:latest
+        ports: 9999:8080
